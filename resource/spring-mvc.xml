@@ -12,7 +12,7 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<!-- 使用注解的包，包括子集 -->
-	<context:component-scan base-package="com.activiti.controller" />
+	<context:component-scan base-package="com.ivo" />
 
 	<mvc:annotation-driven />
 
