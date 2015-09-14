@@ -20,6 +20,16 @@
 	<mvc:resources location="/images/" mapping="/images/**" />
 	<mvc:resources location="/css/" mapping="/css/**" />
 	<mvc:resources location="/js/" mapping="/js/**" />
+	
+	<!-- 拦截器 -->
+    	<mvc:interceptors>
+	    	<bean class="com.ivo.web.interceptor.BaseInterceptor" />
+	    	<!-- <mvc:interceptor>
+		    <mvc:mapping path="/*.do"/> 
+		    <bean class="com.ivo.web.interceptor.BaseInterceptor" />
+	    	</mvc:interceptor> -->
+	</mvc:interceptors>
+
 
 	<!-- 视图解析器 -->
 	<bean id="viewResolver"
